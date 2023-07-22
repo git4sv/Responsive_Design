@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/SFProDisplay-Regular.ttf");
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 99vh;
+  font-family: "SF Pro Display", serif;
+}
+
+.mini {
+  font-size: 1.2rem;
+}
+
+.iphonem,
+.iphone,
+.ipad,
+.mbook,
+.imac,
+.buy1,
+.buy2,
+.buy3,
+.buy4,
+.buy5 {
+  display: none;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+a:hover, a:focus {
+  border: 0.2rem solid black;
+  border-radius: 1.5rem;
+}
+@media (max-width: 318px) {
+  body {
+    background-color: #364936;
+    font-size: 0.7rem;
+  }
+
+  .iphonem,
+  .buy1 {
+    display: block;
+  }
+}
+
+img {
+  min-height: 10%;
+  width: 10%;
+}
+
+@media (min-width: 318px) and (max-width: 480px) {
+  body {
+    background-color: #fc1937;
+    color: white;
+    font-size: 1rem;
+  }
+
+  a {
+    color: white;
+  }
+  a:hover {
+    border-color: white;
+  }
+
+  .iphone,
+  .buy2 {
+    display: block;
+  }
+
+  img {
+    filter: invert(1);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  body {
+    background-color: #555557;
+    font-size: 1.2rem;
+  }
+
+  .ipad,
+  .buy3 {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    background-color: #bfc0c5;
+    font-size: 1.5rem;
+  }
+
+  .mbook,
+  .buy4 {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-color: #b3cadc;
+    font-size: 1.8rem;
+  }
+
+  .imac,
+  .buy5 {
+    display: block;
+  }
+}
